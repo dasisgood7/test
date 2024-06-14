@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font: bold 22px/1.5 sans-serif;
+  color: #fff;
+}
+.main {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+}
+.squares {
+  width: 100%;
+  max-width: 1097px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-bottom: -20px;
+}
+.squares__row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.squares__row_one {
+  justify-content: space-between;
+}
+.squares__row_two {
+  justify-content: end;
+}
+.squares__row_three {
+  justify-content: start;
+}
+.squares__row_three > div:nth-child(1) {
+  order: 2;
+}
+.squares__row_three > div:nth-child(2) {
+  order: 1;
+}
+.square {
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 64px;
+  font-weight: 700;
+}
+
+@keyframes anim_one {
+  0% { background-color: #FF0000; }
+  25% { background-color: #0500FF; }
+  75% { background-color: #52FF00; }
+  100% { background-color: #FF0000; }
+}
+.anim_one {
+  animation: anim_one 1.5s infinite;
+}
+
+
+@keyframes anim_two {
+  0% { background-color: #FF0000; }
+  35% { background-color: #0500FF; }
+  65% { background-color: #52FF00; }
+  100% { background-color: #FF0000; }
+}
+.anim_two {
+  animation: anim_two 1.5s infinite;
+}
+
+
+@keyframes anim_three {
+  0% { background-color: #FF0000; }
+  30% { background-color: #0500FF; }
+  70% { background-color: #52FF00; }
+  100% { background-color: #FF0000; }
+}
+.anim_three {
+  animation: anim_three 1.5s infinite;
+}
+
+
+@keyframes anim_four {
+  0% { background-color: #FF0000; }
+  22% { background-color: #0500FF; }
+  77% { background-color: #52FF00; }
+  100% { background-color: #FF0000; }
+}
+.anim_four {
+  animation: anim_four 1.5s infinite;
+}
+
+
+@keyframes anim_five {
+  0% { background-color: #FF0000; }
+  40% { background-color: #0500FF; }
+  79% { background-color: #52FF00; }
+  100% { background-color: #FF0000; }
+}
+.anim_five {
+  animation: anim_five 1.5s infinite;
+}
+
+
+@keyframes anim_six {
+  0% { background-color: #FF0000; }
+  33% { background-color: #0500FF; }
+  66% { background-color: #52FF00; }
+  100% { background-color: #FF0000; }
+}
+.anim_six {
+  animation: anim_six 1.5s infinite;
+}
